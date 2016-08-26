@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <ReactiveCocoa/ReactiveCocoa.h>
 
 @interface PuttingFireRecord : NSObject
 @property (nonatomic, copy) NSString *serious_sum;
@@ -16,4 +17,5 @@
 @property (nonatomic, copy) NSString *serious_3;
 @property (nonatomic, copy) NSString *serious_4;
 @property (nonatomic, copy) NSString *serious_5;
+
 @end

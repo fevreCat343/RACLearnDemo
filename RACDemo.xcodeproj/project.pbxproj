@@ -15,6 +15,9 @@
 		F718622F1D1A8A50005C5680 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F718622D1D1A8A50005C5680 /* LaunchScreen.storyboard */; };
 		F718623A1D1A8A50005C5680 /* RACDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F71862391D1A8A50005C5680 /* RACDemoTests.m */; };
 		F71862451D1A8A50005C5680 /* RACDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F71862441D1A8A50005C5680 /* RACDemoUITests.m */; };
+		F75C79BE1D6E9F82006FEE33 /* RuntimeTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F75C79BD1D6E9F82006FEE33 /* RuntimeTestViewController.m */; };
+		F75C79C31D6ECF14006FEE33 /* NSObject+Demo.m in Sources */ = {isa = PBXBuildFile; fileRef = F75C79C21D6ECF14006FEE33 /* NSObject+Demo.m */; };
+		F75C79C61D6ED041006FEE33 /* DemoView.m in Sources */ = {isa = PBXBuildFile; fileRef = F75C79C51D6ED041006FEE33 /* DemoView.m */; };
 		F7721C261D6C589B00EAC599 /* MultipleObservableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7721C251D6C589B00EAC599 /* MultipleObservableViewController.m */; };
 		F7721C291D6C5AD400EAC599 /* PuttingFireRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = F7721C281D6C5AD400EAC599 /* PuttingFireRecord.m */; };
 		F77BB51F1D1A912A005219D7 /* RACCaculator.m in Sources */ = {isa = PBXBuildFile; fileRef = F77BB51E1D1A912A005219D7 /* RACCaculator.m */; };
@@ -59,6 +62,13 @@
 		F71862401D1A8A50005C5680 /* RACDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RACDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F71862441D1A8A50005C5680 /* RACDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RACDemoUITests.m; sourceTree = "<group>"; };
 		F71862461D1A8A50005C5680 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F75C79BC1D6E9F82006FEE33 /* RuntimeTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RuntimeTestViewController.h; sourceTree = "<group>"; };
+		F75C79BD1D6E9F82006FEE33 /* RuntimeTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RuntimeTestViewController.m; sourceTree = "<group>"; };
+		F75C79BF1D6EA2C3006FEE33 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		F75C79C11D6ECF14006FEE33 /* NSObject+Demo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Demo.h"; sourceTree = "<group>"; };
+		F75C79C21D6ECF14006FEE33 /* NSObject+Demo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Demo.m"; sourceTree = "<group>"; };
+		F75C79C41D6ED041006FEE33 /* DemoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoView.h; sourceTree = "<group>"; };
+		F75C79C51D6ED041006FEE33 /* DemoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoView.m; sourceTree = "<group>"; };
 		F7721C241D6C589B00EAC599 /* MultipleObservableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultipleObservableViewController.h; sourceTree = "<group>"; };
 		F7721C251D6C589B00EAC599 /* MultipleObservableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultipleObservableViewController.m; sourceTree = "<group>"; };
 		F7721C271D6C5AD400EAC599 /* PuttingFireRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PuttingFireRecord.h; sourceTree = "<group>"; };
@@ -149,6 +159,8 @@
 				F718622D1D1A8A50005C5680 /* LaunchScreen.storyboard */,
 				F71862301D1A8A50005C5680 /* Info.plist */,
 				F718621F1D1A8A50005C5680 /* Supporting Files */,
+				F75C79BC1D6E9F82006FEE33 /* RuntimeTestViewController.h */,
+				F75C79BD1D6E9F82006FEE33 /* RuntimeTestViewController.m */,
 			);
 			path = RACDemo;
 			sourceTree = "<group>";
@@ -182,8 +194,11 @@
 		F7721C211D6C57C300EAC599 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				F75C79C11D6ECF14006FEE33 /* NSObject+Demo.h */,
+				F75C79C21D6ECF14006FEE33 /* NSObject+Demo.m */,
 				F71862221D1A8A50005C5680 /* AppDelegate.h */,
 				F71862231D1A8A50005C5680 /* AppDelegate.m */,
+				F75C79BF1D6EA2C3006FEE33 /* PrefixHeader.pch */,
 			);
 			name = Base;
 			sourceTree = "<group>";
@@ -206,6 +221,8 @@
 				F71862261D1A8A50005C5680 /* ViewController.m */,
 				F77BB51D1D1A912A005219D7 /* RACCaculator.h */,
 				F77BB51E1D1A912A005219D7 /* RACCaculator.m */,
+				F75C79C41D6ED041006FEE33 /* DemoView.h */,
+				F75C79C51D6ED041006FEE33 /* DemoView.m */,
 			);
 			name = Other;
 			sourceTree = "<group>";
@@ -413,11 +430,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				F71862271D1A8A50005C5680 /* ViewController.m in Sources */,
+				F75C79C61D6ED041006FEE33 /* DemoView.m in Sources */,
+				F75C79BE1D6E9F82006FEE33 /* RuntimeTestViewController.m in Sources */,
 				F7BB90AA1D5DCD9C00124BC0 /* SMStudent.m in Sources */,
 				F7BB90A41D5DCBA000124BC0 /* RACDemoController.m in Sources */,
 				F77BB51F1D1A912A005219D7 /* RACCaculator.m in Sources */,
 				F7BB90A91D5DCD9C00124BC0 /* SMCreditSubject.m in Sources */,
 				F71862241D1A8A50005C5680 /* AppDelegate.m in Sources */,
+				F75C79C31D6ECF14006FEE33 /* NSObject+Demo.m in Sources */,
 				F7721C261D6C589B00EAC599 /* MultipleObservableViewController.m in Sources */,
 				F7721C291D6C5AD400EAC599 /* PuttingFireRecord.m in Sources */,
 				F71862211D1A8A50005C5680 /* main.m in Sources */,
@@ -558,6 +578,8 @@
 			baseConfigurationReference = 5DE20B92DEE28CD8CDF10F88 /* Pods-RACDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(PRODUCT_NAME)/PrefixHeader.pch";
 				INFOPLIST_FILE = RACDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -571,6 +593,8 @@
 			baseConfigurationReference = 4EC068B20282671B2DE174BA /* Pods-RACDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(PRODUCT_NAME)/PrefixHeader.pch";
 				INFOPLIST_FILE = RACDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

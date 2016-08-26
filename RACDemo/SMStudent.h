@@ -7,6 +7,7 @@
 
 #import <Foundation/Foundation.h>
 #import "SMCreditSubject.h"
+#import <UIKit/UIKit.h>
 
 typedef NS_ENUM(NSUInteger, SMStudentGender) {
     SMStudentGenderMale,
@@ -25,6 +26,11 @@ typedef BOOL(^SatisfyActionBlock)(NSUInteger credit);
 - (SMStudent *)name:(NSString *)name;
 - (SMStudent *)gender:(SMStudentGender)gender;
 - (SMStudent *)studentNumber:(NSUInteger)number;
+
+// runtime试验方法
+- (instancetype)initWithTitle:(NSString *)title
+						Names:(NSArray *)names
+						Frame:(CGRect)frame;
 
 //积分相关
 - (SMStudent *)sendCredit:(NSUInteger(^)(NSUInteger credit))updateCreditBlock;

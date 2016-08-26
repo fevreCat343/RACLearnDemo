@@ -7,6 +7,8 @@
 
 #import "SMStudent.h"
 
+
+
 @interface SMStudent()
 
 @property (nonatomic, copy) NSString *name;
@@ -15,9 +17,24 @@
 @property (nonatomic, assign) NSUInteger credit;
 @property (nonatomic, strong) SatisfyActionBlock satisfyBlock;
 
+@property (nonatomic, copy) NSString *titleString;
+@property (nonatomic, strong) NSArray *nameArray;
+@property (nonatomic, assign) CGRect frame;
 @end
 
 @implementation SMStudent
+
+- (instancetype)initWithTitle:(NSString *)title Names:(NSArray *)names Frame:(CGRect)frame {
+	self = [super init];
+	if (self) {
+		_titleString = title;
+		_nameArray = names;
+		_frame = frame;
+		RMLog(@"%@", _titleString);
+	}
+	return self;
+}
+
 
 + (SMStudent *)create {
     SMStudent *student = [[self alloc] init];

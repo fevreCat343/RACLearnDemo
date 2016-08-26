@@ -1,0 +1,21 @@
+//
+//  PrefixHeader.pch
+//  RACDemo
+//
+//  Created by wangzhaomin on 16/8/25.
+//  Copyright © 2016年 FC. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#if DEBUG
+
+#endif /* PrefixHeader_pch */
+
+#define RMLog(FORMAT, ...) fprintf(stderr,"\nfunction:%s😀😀😀 line:%d😈😈😈 content:%s🙁🙁🙁 \n", __FUNCTION__, __LINE__, [[NSString stringWithFormat:FORMAT, ##__VA_ARGS__] UTF8String]);
+#else
+#define RMLog(FORMAT, ...) nil
+#endif
